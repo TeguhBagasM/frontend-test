@@ -11,10 +11,8 @@ Aplikasi web responsif yang dibuat untuk memenuhi test masuk magang Frontend Dev
 ## 🚀 Teknologi yang Digunakan
 
 - **React 18** - JavaScript library untuk membangun user interface
-- **Vite** - Build tool dan development server yang cepat
 - **Tailwind CSS** - Utility-first CSS framework untuk styling
 - **Local Storage** - Browser storage untuk persistence data
-- **JavaScript ES6+** - Modern JavaScript features
 
 ## ✨ Fitur Utama
 
@@ -199,8 +197,7 @@ src/
 
 ## 🔗 Links
 
-- **Repository:** [GitHub Repository URL]
-- **Live Demo:** [Deployed Application URL]
+- **Live Demo:** https://frontend-intern-aksamedia.vercel.app/
 
 ## 👨‍💻 Developer
 
@@ -210,4 +207,4 @@ PT Aksamedia Mulia Digital
 
 ---
 
-_Dibuat dengan ❤️ untuk test masuk magang Frontend Developer_
+_Dibuat dengan ❤️ untuk test masuk magang Fullstack Developer_
