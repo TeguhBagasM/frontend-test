@@ -134,7 +134,7 @@ src/
 ### Login
 
 - **Username:** `admin`
-- **Password:** `admin123`
+- **Password:** `pastibisa`
 
 ### Navigasi
 
