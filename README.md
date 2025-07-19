@@ -1,70 +1,213 @@
-# Getting Started with Create React App
+# Full stack Developer Intern Test - PT Aksamedia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Nama:** Teguh Bagas Mardiansyah  
+**Posisi:** Full stack Developer Intern  
+**Perusahaan:** PT Aksamedia Mulia Digital
 
-## Available Scripts
+## 📋 Deskripsi Project
 
-In the project directory, you can run:
+Aplikasi web responsif yang dibuat untuk memenuhi test masuk magang Frontend Developer di PT Aksamedia Mulia Digital. Aplikasi ini menampilkan kemampuan dalam membuat website yang interaktif, responsif, dan modern menggunakan teknologi web terkini.
 
-### `npm start`
+## 🚀 Teknologi yang Digunakan
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 18** - JavaScript library untuk membangun user interface
+- **Vite** - Build tool dan development server yang cepat
+- **Tailwind CSS** - Utility-first CSS framework untuk styling
+- **Local Storage** - Browser storage untuk persistence data
+- **JavaScript ES6+** - Modern JavaScript features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Fitur Utama
 
-### `npm test`
+### 🔐 Authentication System
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Login tanpa API dengan static credentials
+- Session persistence setelah browser refresh
+- Route protection untuk halaman yang memerlukan autentikasi
+- Logout functionality dengan dropdown di navbar
 
-### `npm run build`
+### 📊 CRUD Operations
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Create** - Tambah data baru
+- **Read** - Tampilkan daftar data dengan pagination
+- **Update** - Edit data yang sudah ada
+- **Delete** - Hapus data
+- **Search/Filter** - Pencarian data real-time
+- **Pagination** - Navigasi halaman data (custom implementation)
+- **State Persistence** - Maintain state saat refresh menggunakan query string
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🎨 Theme System
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Light Mode** - Tema terang
+- **Dark Mode** - Tema gelap
+- **System Mode** - Mengikuti preferensi sistem operasi
+- Auto-detection perubahan theme sistem
+- Theme persistence di localStorage
 
-### `npm run eject`
+### 👤 Profile Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Edit profile user yang sedang login
+- Real-time update nama di navbar
+- Data persistence setelah refresh
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📱 Responsive Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Desktop** - Layout optimal untuk layar besar
+- **Tablet** - Adaptasi untuk layar medium
+- **Mobile** - User-friendly untuk smartphone
+- Modern UI/UX dengan Tailwind CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🏗️ Struktur Project
 
-## Learn More
+```
+src/
+├── components/
+│   ├── Auth/
+│   │   └── Login.jsx
+│   ├── Common/
+│   │   ├── Dropdown.jsx
+│   │   ├── Modal.jsx
+│   │   └── Pagination.jsx
+│   ├── CRUD/
+│   │   ├── DataEdit.jsx
+│   │   ├── DataForm.jsx
+│   │   └── DataList.jsx
+│   ├── Layout/
+│   │   ├── Layout.jsx
+│   │   └── Navbar.jsx
+│   └── Profile/
+│       └── ProfileEdit.jsx
+├── contexts/
+│   ├── AuthContext.js
+│   └── ThemeContext.js
+├── hooks/
+│   ├── useAuth.js
+│   ├── useLocalStorage.js
+│   └── useTheme.js
+├── utils/
+│   └── storage.js
+├── App.jsx
+├── App.css
+└── main.jsx
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔧 Setup dan Instalasi
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+- Node.js (v16 atau lebih baru)
+- npm atau yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Langkah Instalasi
 
-### Analyzing the Bundle Size
+1. **Clone repository**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   git clone https://github.com/TeguhBagasM/frontend-test.git
+   cd frontend-test
+   ```
 
-### Making a Progressive Web App
+2. **Install dependencies**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm install
+   # atau
+   yarn install
+   ```
 
-### Advanced Configuration
+3. **Jalankan development server**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   npm run dev
+   # atau
+   yarn dev
+   ```
 
-### Deployment
+4. **Build untuk production**
+   ```bash
+   npm run build
+   # atau
+   yarn build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔑 Cara Penggunaan
 
-### `npm run build` fails to minify
+### Login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Username:** `admin`
+- **Password:** `admin123`
+
+### Navigasi
+
+1. **Dashboard** - Halaman utama dengan overview fitur
+2. **Data Management** - CRUD operations dengan search dan pagination
+3. **Profile** - Edit informasi profile user
+4. **Theme Toggle** - Ubah tema aplikasi
+
+### Fitur CRUD
+
+- **Tambah Data:** Klik tombol "Add New" di halaman Data List
+- **Edit Data:** Klik tombol "Edit" di setiap row data
+- **Hapus Data:** Klik tombol "Delete" di setiap row data
+- **Search:** Gunakan search box untuk mencari data
+- **Pagination:** Navigasi halaman di bagian bawah tabel
+
+## 📝 Fitur Khusus
+
+### State Persistence
+
+- Aplikasi mempertahankan state saat refresh browser
+- Posisi pagination dan keyword search tersimpan di URL
+- User tetap login sampai logout manual
+
+### Theme Management
+
+- Mendukung 3 mode theme: Light, Dark, System
+- Auto-detection perubahan theme sistem operasi
+- Smooth transition antar tema
+
+### Responsive Design
+
+- Mobile-first approach
+- Breakpoints yang optimal untuk semua device
+- Touch-friendly interface untuk mobile
+
+## 🎯 Pemenuhan Requirement
+
+### ✅ Requirement Terpenuhi
+
+- [x] HTML semantic dan clean code
+- [x] CSS dengan Tailwind (tanpa library UI)
+- [x] JavaScript ES6+ modern features
+- [x] React.js untuk komponen interaktif
+- [x] Responsive design (desktop, tablet, mobile)
+- [x] Authentication tanpa API
+- [x] CRUD operations dengan localStorage
+- [x] Search/filter dan pagination custom
+- [x] State persistence dengan query string
+- [x] Route protection
+- [x] Dark/Light/System theme mode
+- [x] Profile edit dengan real-time update
+- [x] Dropdown custom tanpa library
+
+### 🎨 Kualitas Kode
+
+- Clean code dengan struktur yang terorganisir
+- Reusable components dan custom hooks
+- Consistent naming conventions
+- Responsive design patterns
+- Modern React patterns (Hooks, Context API)
+
+## 🔗 Links
+
+- **Repository:** [GitHub Repository URL]
+- **Live Demo:** [Deployed Application URL]
+
+## 👨‍💻 Developer
+
+**Teguh Bagas Mardiansyah**  
+Frontend Developer Intern Candidate  
+PT Aksamedia Mulia Digital
+
+---
+
+_Dibuat dengan ❤️ untuk test masuk magang Frontend Developer_
